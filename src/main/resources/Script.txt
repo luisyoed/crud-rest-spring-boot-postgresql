@@ -1,0 +1,8 @@
+CREATE TABLE public.users (
+	age int8 NULL,
+	user_id bigserial NOT NULL,
+	last_name varchar(255) NOT NULL,
+	"name" varchar(255) NOT NULL,
+	status bool DEFAULT true NULL,
+	CONSTRAINT users_pkey PRIMARY KEY (user_id)
+);
